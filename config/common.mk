@@ -1,5 +1,8 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+# Include OctOS bootanimation
+include vendor/to/config/bootanimation.mk
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -76,10 +79,6 @@ endif
 include vendor/to/config/packages.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/to/overlay/common
-
-# Boot Animation
-PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 # SuperSU
 PRODUCT_COPY_FILES += \

@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1440
+TARGET_SCREEN_WIDTH := 2560
+
 # Inherit some common Team OctOs configuration
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
