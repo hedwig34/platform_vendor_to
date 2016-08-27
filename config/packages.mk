@@ -25,3 +25,7 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     Busybox
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
