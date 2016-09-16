@@ -3,6 +3,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Include OctOS bootanimation
 include vendor/to/config/bootanimation.mk
 
+#substratum
+PRODUCT_COPY_FILES += \
+vendor/to/prebuilt/common/apk/substratum.apk:system/app/substratum/substratum.apk 
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -111,3 +115,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.to.version=$(TO_VERSION) \
     ro.mod.version=$(TO_BUILD_TYPE)-OCT-N
 
+<<<<<<< HEAD
+=======
+# Include OctOS versioning
+include vendor/to/config/to_versioning.mk
+
+# Extra Optional packages
+ PRODUCT_PACKAGES += \
+     masquerade
+>>>>>>> 59612ef... substratum:add apk to rom
