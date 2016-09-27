@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
     Chromium \
     LatinIME \
     OmniSwitch \
-    masquerade
+    masquerade \
+    KernelAdiutor
 
 # Extra tools
 PRODUCT_PACKAGES += \
