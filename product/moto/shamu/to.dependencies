@@ -6,16 +6,21 @@
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "aosp",
-      "repository":  "device/moto/shamu-kernel",
-      "target_path": "device/moto/shamu-kernel",
-      "revision":    "refs/tags/android-7.0.0_r6",
-      "clone_depth": "1"
+      "remote":      "to",
+      "repository":  "platform_kernel_moto_shamu",
+      "target_path": "kernel/moto/shamu",
+      "revision":    "aosp-7.0"
     },
     {
       "remote":      "to",
       "repository":  "proprietary_vendor_moto",
       "target_path": "vendor/moto",
       "revision":    "aosp-7.0"
+    },
+    {
+      "remote":      "aosp",
+      "repository":  "platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
+      "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
+      "revision":    "master"
     }
 ]
