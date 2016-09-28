@@ -12,7 +12,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     OmniSwitch \
     masquerade \
-    KernelAdiutor
+    KernelAdiutor \
+    AboutOctOs
 
 # Extra tools
 PRODUCT_PACKAGES += \
