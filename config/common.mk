@@ -9,8 +9,8 @@ vendor/to/prebuilt/common/apk/substratum.apk:system/app/substratum/substratum.ap
 
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
-vendor/to/prebuilt/common/apk/PixelLauncherPrebuilt.apk:system/priv-app/nexus-launcher/PixelLauncherPrebuilt.apk \
-vendor/to/prebuilt/common/apk/WallpaperPickerGooglePrebuilt.apk:system/app/nexus-launcher/WallpaperPickerGooglePrebuilt.apk
+vendor/to/prebuilt/common/apk/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+vendor/to/prebuilt/common/apk/WallpaperPickerGooglePrebuilt.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
