@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#Device overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/huawei/angler/overlay
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440

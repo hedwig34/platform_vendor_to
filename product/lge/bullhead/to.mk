@@ -1,3 +1,5 @@
+#Device overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/lge/bullhead/overlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
