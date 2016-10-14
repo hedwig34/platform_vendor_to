@@ -6,10 +6,10 @@
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "aosp",
-      "repository":  "device/huawei/angler-kernel",
-      "target_path": "device/huawei/angler-kernel",
-      "revision":    "refs/tags/android-7.0.0_r6"
+      "remote":      "to",
+      "repository":  "platform_kernel_huawei_angler",
+      "target_path": "kernel/huawei/angler",
+      "revision":    "aosp-7.0"
     },
     {
       "remote":      "to",
