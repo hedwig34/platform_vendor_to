@@ -119,13 +119,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.to.version=$(TO_VERSION) \
     ro.mod.version=$(TO_BUILD_TYPE)-OCT-N
-
-<<<<<<< HEAD
-=======
-# Include OctOS versioning
-include vendor/to/config/to_versioning.mk
-
-# Extra Optional packages
- PRODUCT_PACKAGES += \
-     masquerade
->>>>>>> 59612ef... substratum:add apk to rom
