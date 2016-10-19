@@ -32,7 +32,7 @@ done
 
 case "$1" in
   backup)
-    grep $LCDDENSITY /system/build.prop > /tmp/du_dpi
+    grep $LCDDENSITY /system/build.prop > /tmp/to_dpi
     mkdir -p $C
     preserve_addon_d
     run_stage pre-backup
@@ -40,11 +40,11 @@ case "$1" in
     run_stage post-backup
   ;;
   restore)
-    DUDPI=`cat /tmp/du_dpi`
-    if [ "${DUDPI/$LCDDENSITY}" != "$DUDPI" ]
+    TODPI=`cat /tmp/to_dpi`
+    if [ "${TODPI/$LCDDENSITY}" != "$TODPI" ]
     then
         mv /system/build.prop /system/build.prop.new
-        sed "s/ro\.sf\.lcd_density=.*/$DUDPI/g" /system/build.prop.new > /system/build.prop
+        sed "s/ro\.sf\.lcd_density=.*/$TODPI/g" /system/build.prop.new > /system/build.prop
         chmod 644 /system/build.prop
         rm -f /system/build.prop.new
     fi
