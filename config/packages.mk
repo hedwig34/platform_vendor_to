@@ -1,19 +1,19 @@
 # Required packages
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Development \
-    SpareParts
+    CellBroadcastReceiver
 
 # Optional packages
 PRODUCT_PACKAGES += \
+    AboutOctOs \
     Basic \
     CalendarWidget \
-    Chromium \
     LatinIME \
-    OmniSwitch \
     masquerade \
+    OmniSwitch \
+    PixelLauncher \
     KernelAdiutor \
-    AboutOctOs
+    substratum \
+    WallpaperPickerGoogle
 
 # Extra tools
 PRODUCT_PACKAGES += \
