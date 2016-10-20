@@ -98,28 +98,8 @@ PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/to/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Versioning System
-ANDROID_VERSION = 7.0
-TO_VERSION = 7.0
-ifndef TO_BUILD_TYPE
-    TO_BUILD_TYPE := OCT-N
-    PLATFORM_VERSION_CODENAME := COMMUNITY
-endif
-
-#Build DU-Updater only if TO_BUILD_TYPE isn't COMMUNITY
-#ifneq ($(TO_BUILD_TYPE),COMMUNITY)
-#PRODUCT_PACKAGES += \
-#    DU-Updater
-#endif
+# Include OctOS versioning
+include vendor/to/config/to_versioning.mk
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
-
-# Set all versions
-TO_VERSION := TO_$(TO_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(TO_VERSION)-$(TO_BUILD_TYPE)
-TO_MOD_VERSION := TO_$(TO_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(TO_VERSION)-$(TO_BUILD_TYPE)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    BUILD_DISPLAY_ID=$(BUILD_ID) \
-    ro.to.version=$(TO_VERSION) \
-    ro.mod.version=$(TO_BUILD_TYPE)-OCT-N
